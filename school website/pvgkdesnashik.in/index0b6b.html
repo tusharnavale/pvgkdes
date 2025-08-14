@@ -1,0 +1,631 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Welcome to PVG KDES, Nashik</title>
+  <meta name="description" content="Pune Vidyarthi Griha's Dr. Kakasaheb Deodhar English School – Modern, full-screen school website with immersive design.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/fa/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/fa/apple-icon-60x60.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/fa/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/fa/favicon-16x16.png">
+  <link rel="manifest" href="images/fa/manifest.json">
+  <meta name="msapplication-TileColor" content="#0A2A66">
+  <meta name="theme-color" content="#0A2A66">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/prettyPhoto.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Custom Styles -->
+  <style>
+    :root {
+      --primary: #0A2A66;    /* Deep Navy Blue */
+      --secondary: #D4AF37;  /* Gold */
+      --light: #f8f9fa;
+      --gray: #666;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      margin: 0;
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* Hero Slider - Full Screen & Animated */
+    .full-screen-hero {
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #tg-addmissionslider .owl-stage-outer, 
+    #tg-addmissionslider .item img {
+      height: 100vh;
+    }
+
+    .item img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .tg-slidercontent {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 60px 40px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: white;
+      text-align: center;
+    }
+
+    .tg-slidercontent h1 {
+      font-size: 2.8rem;
+      margin: 0 0 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards 0.3s;
+    }
+
+    .tg-slidercontent p {
+      font-size: 1.5rem;
+      color: var(--secondary);
+      font-weight: 500;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards 0.6s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Header & Navbar */
+    .tg-topbar {
+      background: var(--primary);
+      color: white;
+      font-size: 14px;
+      padding: 8px 0;
+    }
+
+    .tg-topbar a {
+      color: var(--secondary);
+    }
+
+    .tg-header {
+      background: white;
+      transition: all 0.4s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .tg-header.scrolled {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 20px rgba(10, 42, 102, 0.15);
+    }
+
+    .tg-logo img {
+      height: 60px;
+      transition: transform 0.3s;
+    }
+
+    .tg-logo img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Navigation */
+    .tg-nav ul li a {
+      color: var(--primary);
+      font-weight: 600;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .tg-nav ul li a:hover {
+      color: var(--secondary);
+    }
+
+    .tg-nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background: var(--secondary);
+      transition: width 0.3s;
+    }
+
+    .tg-nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    /* Section Styling */
+    .full-width-section {
+      padding: 80px 0;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+
+    .section-header h2::after {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 3px;
+      bottom: 0;
+      left: 20%;
+      background: var(--secondary);
+    }
+
+    .section-header p {
+      color: var(--gray);
+      max-width: 700px;
+      margin: 20px auto 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 12px;
+      color: #111;
+      font-weight: 500;
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      color: var(--secondary);
+      margin-right: 8px;
+    }
+
+    .tg-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 28px;
+      font-weight: 600;
+      transition: all 0.4s;
+      box-shadow: 0 4px 10px rgba(10, 42, 102, 0.3);
+    }
+
+    .tg-btn:hover {
+      background: var(--secondary);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Gallery */
+    .tg-masonrygrid figure:hover .tg-btnviewimg {
+      opacity: 1;
+      transform: scale(1) translate(-50%, -50%);
+    }
+
+    .tg-btnviewimg {
+      transition: all 0.4s ease;
+    }
+
+    /* Footer */
+    .tg-footermiddlebar {
+      background: var(--primary);
+      color: white;
+    }
+
+    .tg-footermiddlebar a {
+      color: var(--secondary);
+    }
+
+    .tg-infolist i {
+      color: var(--secondary);
+    }
+
+    .tg-socialicons li a:hover {
+      background: var(--secondary);
+      transform: translateY(-3px);
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 99;
+      animation: pulse 1.8s infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* Fade-in on Scroll */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .tg-slidercontent h1 { font-size: 2rem; }
+      .tg-slidercontent p { font-size: 1.2rem; }
+      .section-header h2 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body class="tg-home tg-homeone">
+
+  <!-- Full-Screen Hero Slider -->
+  <section id="hero" class="full-screen-hero">
+    <div id="tg-addmissionslider" class="tg-homeslider owl-carousel">
+      <figure class="item">
+        <img src="sliderimage/pvgkdes-preprimary-31.jpg" alt="PVG KDES Campus">
+        <figcaption class="tg-slidercontent">
+          <div class="tg-slidercontentbox">
+            <h1>PVG KDES, Nashik</h1>
+            <p>Empowering young minds since 2001</p>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="sliderimage/pvgkdes-secondary-school-40.jpg" alt="Secondary Campus">
+        <figcaption class="tg-slidercontent">
+          <div class="tg-slidercontentbox">
+            <h1>Secondary & Higher Secondary</h1>
+            <p>Digital classrooms, labs, and 20-acre campus</p>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="sliderimage/pvgkdes2.jpg" alt="Main Building">
+        <figcaption class="tg-slidercontent">
+          <div class="tg-slidercontentbox">
+            <h1>Admissions Open 2024-2025</h1>
+            <p>Pre-Primary, Primary, Secondary – Enroll Today!</p>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Header -->
+  <header id="tg-header" class="tg-header tg-haslayout">
+    <div class="tg-topbar">
+      <div class="tg-leftbox">
+        <span id="tg-datebox" class="tg-datebox" style="color:#FFF;"></span>
+        <span class="tg-rtltextbox" style="color:#FFF;">You are at: PVG KDES, Nashik</span>
+      </div>
+      <div class="tg-rightbox">
+        <span class="tg-tollfree"><a href="tel:02532534291" style="color:#FFF;">Enquiry @: 0253 2534291</a></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="tg-logoandnoticeboard">
+            <strong class="tg-logo">
+              <a href="index.html" title="PVG KDES, Nashik">
+                <img src="images/kdeslogo.png" alt="PVG KDES Logo">
+              </a>
+            </strong>
+            <div class="tg-noticeboard hidden-xs">
+              <div class="tg-textbox">
+                <span>
+                  <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="3.5">
+                    <a href="http://www.pvgkdesnashik.in/index.php?tcf=admission">Admissions Open for Pre Primary School 2024-2025</a>
+                  </marquee>
+                </span>
+              </div>
+              <figure><img src="images/img-01.jpg" alt="Admission Notice"></figure>
+            </div>
+          </div>
+          <div class="tg-navigationarea">
+            <nav id="tg-nav" class="tg-nav">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+                <ul>
+                  <li><a href="kdespreprimary/index.html" target="_blank">PVG Kinder Garten</a></li>
+                  <li><a href="kdesprimary/index.html" target="_blank">Primary School</a></li>
+                  <li><a href="kdessecondary/index.html" target="_blank">Secondary & Higher Secondary</a></li>
+                  <li><a href="index.html?tcf=admission">Admission 2024-2025</a></li>
+                </ul>
+              </div>
+            </nav>
+            <div class="tg-searchbox">
+              <a id="tg-btnsearch" class="tg-btnsearch" href="#"><i class="icon-magnifier"></i></a>
+              <form class="tg-formtheme tg-formsearch">
+                <fieldset><input type="search" placeholder="Start Your Search Here"></fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Sections (Full Width) -->
+  <section id="about" class="full-width-section py-5 fade-in">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>About Our School</h2>
+        <p>Pune Vidyarthi Griha's Dr. Kakasaheb Deodhar English School is committed to holistic development through modern education.</p>
+      </div>
+      <!-- Pre Primary -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2">
+          <img src="images/pre-primary-school.jpg" alt="Pre Primary School" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3>Pre Primary School</h3>
+          <ul class="feature-list">
+            <li>✅ Language development through phonetics</li>
+            <li>✅ Five senses development activities</li>
+            <li>✅ Art & Craft | Nature Study</li>
+            <li>✅ Field Visit | Bus Facility</li>
+            <li>✅ Individual attention</li>
+            <li>✅ Value-based education</li>
+          </ul>
+          <a href="kdespreprimary/index.html" class="tg-btn">Explore Pre-Primary</a>
+        </div>
+      </div>
+      <!-- Primary -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="images/kdes-primary-school.jpg" alt="Primary School" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3>Primary School</h3>
+          <ul class="feature-list">
+            <li>✅ Digital Boards in Every Classroom</li>
+            <li>✅ 5-Acre Playground</li>
+            <li>✅ CCTV Surveillance</li>
+            <li>✅ Evening Games Facility</li>
+            <li>✅ Teacher's Enrichment Programmes</li>
+          </ul>
+          <a href="kdesprimary/index.html" class="tg-btn">Explore Primary</a>
+        </div>
+      </div>
+      <!-- Secondary -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 order-md-2">
+          <img src="images/kdes-secondary-school.jpg" alt="Secondary School" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3>Secondary School</h3>
+          <p>Situated at a prime location in Nashik, spread over 20 acres with modern facilities.</p>
+          <ul class="feature-list">
+            <li>✅ Digital Classrooms</li>
+            <li>✅ Science & IT Labs</li>
+            <li>✅ Digital Library</li>
+            <li>✅ CCTV Surveillance</li>
+            <li>✅ Well-educated and trained staff</li>
+          </ul>
+          <a href="kdessecondary/index.html" class="tg-btn">Explore Secondary</a>
+        </div>
+      </div>
+      <!-- Higher Secondary -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="images/kdes-higher-secondary-school.jpg" alt="Higher Secondary School" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3>Higher Secondary School</h3>
+          <p>Focus on academic excellence and career readiness with advanced labs and digital learning.</p>
+          <ul class="feature-list">
+            <li>✅ Science & Commerce Streams</li>
+            <li>✅ Career Guidance Cell</li>
+            <li>✅ Competitive Exam Coaching</li>
+            <li>✅ Digital Library Access</li>
+          </ul>
+          <a href="kdessecondary/index.html" class="tg-btn">Explore Higher Secondary</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="full-width-section py-5 fade-in" style="background:#f8f9fa;">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Our Photogallery</h2>
+        <p>Explore moments from classrooms, events, labs, and playgrounds</p>
+      </div>
+      <div class="tg-gallerymasnory">
+        <div id="tg-galleryfilterable" class="tg-galleryfilterable">
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/school4.jpg" alt="School"><a class="tg-btnviewimg" href="images/gallery/school4.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/pvgkdes-preprimary-27.jpg" alt="Pre Primary"><a class="tg-btnviewimg" href="images/gallery/pvgkdes-preprimary-27.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/kdes_2.html" alt="Event"><a class="tg-btnviewimg" href="images/gallery/kdes_2.html" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/IMG-20191202-WA0003.jpg" alt="Event"><a class="tg-btnviewimg" href="images/gallery/IMG-20191202-WA0003.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/pvgcoen_4.html" alt="Campus"><a class="tg-btnviewimg" href="images/gallery/pvgcoen_4.html" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/school1.jpg" alt="Students"><a class="tg-btnviewimg" href="images/gallery/school1.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/school10.html" alt="Event"><a class="tg-btnviewimg" href="images/gallery/school10.html" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/school12.jpg" alt="Campus"><a class="tg-btnviewimg" href="images/gallery/school12.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/kdes_lab2.jpg" alt="Lab"><a class="tg-btnviewimg" href="images/gallery/kdes_lab2.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/kdes_12.jpg" alt="Event"><a class="tg-btnviewimg" href="images/gallery/kdes_12.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/kdes_lab4.jpg" alt="Lab"><a class="tg-btnviewimg" href="images/gallery/kdes_lab4.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/bail-pola-ganpati-3.jpg" alt="Festival"><a class="tg-btnviewimg" href="images/gallery/bail-pola-ganpati-3.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/pvgkdes-preprimary-11.jpg" alt="Students"><a class="tg-btnviewimg" href="images/gallery/pvgkdes-preprimary-11.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+          <div class="tg-masonrygrid">
+            <figure><img src="images/gallery/pvgkdes-preprimary-26.jpg" alt="Event"><a class="tg-btnviewimg" href="images/gallery/pvgkdes-preprimary-26.jpg" data-rel="prettyPhoto[gallery]"><i class="icon-magnifier"></i></a></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="tg-footer" class="tg-footer">
+    <div class="tg-footermiddlebar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="tg-widgetcontent">
+              <strong class="tg-logo"><a href="index.html"><img src="images/kdeslogo.png" alt="PVG KDES" height="60"></a></strong>
+              <p>Pune Vidhyarthi Griha's Dr. Kakasaheb Deodhar English School has been shaping young minds since 2001 with quality education and holistic development.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="tg-widgettitle"><h3>Reach Us</h3></div>
+            <ul class="tg-infolist">
+              <li><i class="icon-location"></i> PVG Campus, 206, Dindori Road, Behind Reliance Petrol Pump, Near MERI, Mhasarul, Nashik - 422004</li>
+              <li><i class="icon-phone-handset"></i> <a href="tel:02532534291">0253 2534291</a></li>
+              <li><i class="icon-envelope"></i> <a href="mailto:pvgprincipalsecondary@gmail.com">[email&#160;protected]</a></li>
+              <li><i class="icon-globe"></i> <a href="index.html">www.pvgkdesnashik.in</a></li>
+            </ul>
+            <ul class="tg-socialicons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119947.61513497283!2d73.73112095881504!3d20.03523372097103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddea318c6cf9af%3A0x703917efb29fcbe8!2sDr.+Kakasaheb+Deodhar+English+School%2C+Nashik!5e0!3m2!1sen!2sin!4v1505913668250" width="100%" height="200" frameborder="0" style="border:0;border-radius:12px" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tg-footerbar">
+      <div class="container text-center">
+        <span class="tg-copyright">Powered by: <a href="https://sinovax.netlify.app/" target="_blank">SINOVAX, Nashik</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fa fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery-library.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/prettyPhoto.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Owl Carousel
+    jQuery("#tg-addmissionslider").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      nav: true,
+      dots: true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn'
+    });
+
+    // Initialize PrettyPhoto
+    jQuery("a[data-rel^='prettyPhoto']").prettyPhoto();
+
+    // Add gradient overlay to slider captions
+    document.querySelectorAll('#tg-addmissionslider figcaption').forEach(el => {
+      el.style.background = 'linear-gradient(transparent, rgba(0,0,0,0.8))';
+      el.style.color = 'white';
+    });
+
+    // Sticky Header
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('tg-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Fade-in on Scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeInOnScroll = () => {
+      fadeElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < window.innerHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    };
+    window.addEventListener('scroll', fadeInOnScroll);
+    fadeInOnScroll();
+  </script>
+</body>
+</html>
